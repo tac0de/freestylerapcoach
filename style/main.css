@@ -45,7 +45,7 @@ body {
   background-image: url(../images/moon.svg);
   width: 30px;
   height: 30px;
-  background-size: cover;
+  background-size: 30px;
   cursor: pointer;
   position: absolute;
   bottom: 1rem;
@@ -55,9 +55,8 @@ body {
 }
 
 .words-container .dark-mode.black {
-  background-image: unset;
-  background: url(../images/sun.svg);
-  background-size: cover;
+  background-image: url(../images/sun.svg);
+  background-size: 30px;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
@@ -122,6 +121,7 @@ body {
 }
 
 .controls select {
+  border: solid 1px #979797;
   background: #fff;
   background-image: url(../images/arrows.svg);
   background-position-x: 98%;
@@ -161,6 +161,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .controls .number-picker input[type="number"]::-webkit-inner-spin-button, .controls .number-picker input[type="number"]::-webkit-outer-spin-button {
