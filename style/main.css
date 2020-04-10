@@ -30,6 +30,12 @@ body {
   color: #000;
 }
 
+@media (min-width: 1200px) {
+  .words-container {
+    height: 500px;
+  }
+}
+
 .words-container.black {
   background: #000;
   color: #fff;
