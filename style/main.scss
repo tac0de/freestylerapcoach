@@ -34,7 +34,7 @@ body {
     background-image: url(../images/moon.svg);
     width: 30px;
     height: 30px;
-    background-size: 30px;
+    background-size: cover;
     cursor: pointer;
     position: absolute;
     bottom: 1rem;
@@ -43,7 +43,7 @@ body {
 
     &.black {
       background-image: url(../images/sun.svg);
-      background-size: 30px;
+      background-size: cover;
       filter: brightness(0) invert(1);
     }
   }
