@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="style/main.css">
-    <title>Rap Word Generator</title>
-  </head>
-  <body>
-    <section class="content">
-      <div class="words-container">
-        <h1></h1>
-        <button class="dark-mode">Dark Mode</button>
-      </div>
 
-      <div class="controls">
-        <div class="number-picker">
-          <button class="minus">-</button>
-          <input type="number" value="2" min="0" max="12" readonly />
-          <button class="plus">+</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Rap Word Generator</title>
+</head>
 
+<body>
+  <section class="content">
+    <div class="words-container">
+      <h1></h1>
+      <div class="dark-mode"></div>
+      <div class="fullscreen"></div>
+      <!-- <button class="dark-mode">Dark Mode</button>
+        <button class="fullscreen" >Full Screen</button> -->
+    </div>
+
+
+    <div class="controls">
+      <div>
+        <p>Languages</p>
         <select>
           <option class="en" selected>English</option>
           <option class="es">Español</option>
@@ -39,20 +37,27 @@
           <option class="zh-hant">漢語</option>
         </select>
       </div>
-    </section>
+      <div>
+        <p class="picker-label">Speed (sec)</p>
+        <div class="number-picker">
+          <button class="minus">-</button>
+          <input type="number" value="2" min="0" max="12" readonly />
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
-    <div class="sc-container">
-      <iframe
-        scrolling="no"
-        frameborder="no"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1026635503&color=ff6600&amp;auto_play=false&amp;show_artwork=false&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=true"
-      >
-      </iframe>
+  <div class="sc-container">
+    <iframe scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1029720298&color=%23ff5500&amp;auto_play=false&amp;show_artwork=false&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=true">
+    </iframe>
+  </div>
 
-    <script type="module" src="js/app.js"></script>
-  </body>
+  <script type="module" src="js/app.js"></script>
+</body>
+
 </html>

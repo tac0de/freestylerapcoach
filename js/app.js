@@ -14,7 +14,8 @@ const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
 
 const wordsContainer = document.querySelector(".words-container");
-const darkmode = document.querySelector(".dark-mode");
+let darkmode = document.querySelector(".dark-mode");
+const fullscreen = document.querySelector(".fullscreen");
 
 let randomWord = EN[Math.floor(Math.random() * EN.length)];
 let count = 2;
@@ -25,14 +26,27 @@ let count = 2;
   darkmode.addEventListener("click", () => {
     wordsContainer.classList.toggle("black");
     darkmode.classList.toggle("black");
-    console.log(darkmode);
-    console.log(wordsContainer);
-    if (darkmode.innerHTML === "Dark Mode") {
-      darkmode.innerHTML = "Light Mode";
-    } else {
-      darkmode.innerHTML = "Dark Mode";
+    fullscreen.classList.toggle("black");
+
+    darkmode.src = "./images/brightness1.svg";
+
+    if (darkmode.src === "./images/brightness1.svg") {
+      darkmode.src = "./images/brightness2.svg";
     }
   });
+
+  fullscreen.addEventListener("click", toggleFullScreen, false);
+
+  function toggleFullScreen() {
+    fullscreen.classList.toggle("exit");
+    if (!document.fullscreenElement) {
+      wordsContainer.requestFullscreen();
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  }
 
   minus.addEventListener("click", () => {
     if (count > 1) {
@@ -43,7 +57,7 @@ let count = 2;
   });
 
   plus.addEventListener("click", () => {
-    if (count < 12) {
+    if (count < 15) {
       count++;
       picker.value = count;
       console.log(picker.value);
