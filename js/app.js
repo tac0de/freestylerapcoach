@@ -27,12 +27,6 @@ let count = 2;
     wordsContainer.classList.toggle("black");
     darkmode.classList.toggle("black");
     fullscreen.classList.toggle("black");
-
-    darkmode.src = "./images/brightness1.svg";
-
-    if (darkmode.src === "./images/brightness1.svg") {
-      darkmode.src = "./images/brightness2.svg";
-    }
   });
 
   fullscreen.addEventListener("click", toggleFullScreen, false);

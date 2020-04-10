@@ -42,7 +42,7 @@ body {
 }
 
 .words-container .dark-mode {
-  background-image: url(../images/sun.svg);
+  background-image: url(../images/moon.svg);
   width: 30px;
   height: 30px;
   background-size: cover;
@@ -55,7 +55,7 @@ body {
 }
 
 .words-container .dark-mode.black {
-  background: url(../images/moon.svg);
+  background: url(../images/sun.svg);
   width: 30px;
   height: 30px;
   background-size: cover;
@@ -72,6 +72,15 @@ body {
   position: absolute;
   right: 1rem;
   bottom: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  .words-container .fullscreen {
+    background-image: unset;
+  }
+  .words-container .fullscreen.black {
+    display: none;
+  }
 }
 
 .words-container .fullscreen.black {
@@ -144,8 +153,10 @@ body {
   width: 55px;
   height: 40px;
   text-align: center;
+  border: none;
+  border-radius: unset;
   border: solid 1px #979797;
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 17px;
   font-weight: normal;
 }

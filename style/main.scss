@@ -31,7 +31,7 @@ body {
   }
 
   .dark-mode {
-    background-image: url(../images/sun.svg);
+    background-image: url(../images/moon.svg);
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -42,7 +42,7 @@ body {
     transition: 0.3s;
 
     &.black {
-      background: url(../images/moon.svg);
+      background: url(../images/sun.svg);
       width: 30px;
       height: 30px;
       background-size: cover;
@@ -51,6 +51,14 @@ body {
   }
 
   .fullscreen {
+    @media (max-width: 600px) {
+      background-image: unset;
+
+      &.black {
+        display: none;
+      }
+    }
+
     background-image: url(../images/fullscreen.svg);
     width: 36px;
     height: 36px;
@@ -123,8 +131,10 @@ body {
       width: 55px;
       height: 40px;
       text-align: center;
+      border: none;
+      border-radius: unset;
       border: solid 1px #979797;
-      background-color: #ffffff;
+      background-color: #fff;
       font-size: 17px;
       font-weight: normal;
 
