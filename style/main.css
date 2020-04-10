@@ -56,8 +56,6 @@ body {
 
 .words-container .dark-mode.black {
   background: url(../images/sun.svg);
-  width: 30px;
-  height: 30px;
   background-size: cover;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
@@ -154,11 +152,14 @@ body {
   height: 40px;
   text-align: center;
   border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: unset;
   border: solid 1px #979797;
   background-color: #fff;
   font-size: 17px;
   font-weight: normal;
+  outline: none;
 }
 
 .controls .number-picker input[type="number"]::-webkit-inner-spin-button, .controls .number-picker input[type="number"]::-webkit-outer-spin-button {
@@ -167,6 +168,7 @@ body {
 }
 
 .controls button {
+  outline: none;
   margin-left: -5px;
   font-size: 17px;
   width: 32px;

@@ -43,8 +43,6 @@ body {
 
     &.black {
       background: url(../images/sun.svg);
-      width: 30px;
-      height: 30px;
       background-size: cover;
       filter: brightness(0) invert(1);
     }
@@ -132,11 +130,13 @@ body {
       height: 40px;
       text-align: center;
       border: none;
+      box-shadow: none;
       border-radius: unset;
       border: solid 1px #979797;
       background-color: #fff;
       font-size: 17px;
       font-weight: normal;
+      outline: none;
 
       &::-webkit-inner-spin-button,
       &::-webkit-outer-spin-button {
@@ -147,6 +147,7 @@ body {
   }
 
   button {
+    outline: none;
     margin-left: -5px;
     font-size: 17px;
     width: 32px;
