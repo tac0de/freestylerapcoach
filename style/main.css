@@ -13,6 +13,9 @@ body {
 
 nav {
   width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
   background: #f4f4f4;
 }
 
@@ -80,6 +83,11 @@ nav ul.active {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  nav ul.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   nav ul li {
     display: inline-block;
   }
@@ -109,6 +117,7 @@ nav ul li a {
 }
 
 .words-container {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
