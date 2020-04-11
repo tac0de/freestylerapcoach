@@ -81,7 +81,7 @@ nav ul .logo a {
 }
 
 nav ul .logo a:hover {
-  color: unset;
+  color: #ff4a00;
 }
 
 nav ul.active {
@@ -359,8 +359,8 @@ nav ul li a:hover {
 .controls button {
   cursor: pointer;
   outline: none;
-  margin-left: -5px;
-  font-size: 15px;
+  margin-left: -5.5px;
+  font-size: 17px;
   width: 32px;
   height: 40px;
   border-top-right-radius: 5px;
@@ -370,12 +370,12 @@ nav ul li a:hover {
 }
 
 .controls button img {
-  width: 13px;
+  width: 12px;
   height: 12px;
 }
 
 .controls button:first-child {
-  margin-right: -5px;
+  margin-right: -5.5px;
   border-radius: unset;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
