@@ -236,6 +236,7 @@ nav {
   }
 
   select {
+    cursor: pointer;
     border: solid 1px #979797;
     background: #fff;
     background-image: url(../images/arrows.svg);
@@ -285,6 +286,7 @@ nav {
   }
 
   button {
+    cursor: pointer;
     img {
       width: 13px;
       height: 12px;
