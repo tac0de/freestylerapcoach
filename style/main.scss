@@ -32,6 +32,9 @@ nav {
     font-size: 18px;
 
     .menu {
+      filter: invert(38%) sepia(88%) saturate(3318%) hue-rotate(359deg)
+        brightness(99%) contrast(110%);
+
       &.close {
         background: url(../images/close.svg);
         background-size: cover;
@@ -50,6 +53,7 @@ nav {
       &:hover {
         color: unset;
       }
+      color: #ff4a00;
       font-size: 40px;
       font-family: "Amatic SC";
       font-weight: 700;

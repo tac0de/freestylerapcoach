@@ -43,6 +43,8 @@ nav .toggle {
 }
 
 nav .toggle .menu {
+  -webkit-filter: invert(38%) sepia(88%) saturate(3318%) hue-rotate(359deg) brightness(99%) contrast(110%);
+          filter: invert(38%) sepia(88%) saturate(3318%) hue-rotate(359deg) brightness(99%) contrast(110%);
   background: url(../images/menu.svg);
   width: 24px;
   height: 24px;
@@ -72,6 +74,7 @@ nav ul {
 }
 
 nav ul .logo a {
+  color: #ff4a00;
   font-size: 40px;
   font-family: "Amatic SC";
   font-weight: 700;
