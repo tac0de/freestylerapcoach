@@ -12,9 +12,8 @@ const h1 = document.querySelector(".words-container h1");
 const picker = document.querySelector(".number-picker input[type='number']");
 const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
-
 const wordsContainer = document.querySelector(".words-container");
-let darkmode = document.querySelector(".dark-mode");
+const darkmode = document.querySelector(".dark-mode");
 const fullscreen = document.querySelector(".fullscreen");
 
 let randomWord = EN[Math.floor(Math.random() * EN.length)];

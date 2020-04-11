@@ -10,15 +10,26 @@
 </head>
 
 <body>
+  <nav>
+    <div class="toggle">
+      <div class="menu"></div>
+      <div>Freestyle Rap Coach</div>
+    </div>
+
+    <ul>
+      <li><a href="/">Freestyle Rap Coach</a></li>
+      <li><a href="article.html">Articles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <section class="content">
     <div class="words-container">
       <h1></h1>
       <div class="dark-mode"></div>
       <div class="fullscreen"></div>
-      <!-- <button class="dark-mode">Dark Mode</button>
-        <button class="fullscreen" >Full Screen</button> -->
     </div>
-
 
     <div class="controls">
       <div>
@@ -48,15 +59,22 @@
     </div>
   </section>
 
-
-
-
   <div class="sc-container">
     <iframe scrolling="no" frameborder="no" allow="autoplay"
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1029720298&color=%23ff5500&amp;auto_play=false&amp;show_artwork=false&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=true">
     </iframe>
   </div>
 
+  <script>
+    const menu = document.querySelector(".menu");
+    const ul = document.querySelector("nav ul");
+
+    menu.addEventListener('click', () => {
+      ul.classList.toggle('active');
+      menu.classList.toggle('close')
+    })
+
+  </script>
   <script type="module" src="js/app.js"></script>
 </body>
 
