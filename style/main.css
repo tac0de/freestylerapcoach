@@ -185,37 +185,9 @@ nav ul li a {
           filter: brightness(0) invert(1);
 }
 
-@-webkit-keyframes scaleback {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scaleback {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 .words-container .fullscreen {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-image: url(../images/fullscreen.svg);
   width: 36px;
   height: 36px;
@@ -227,8 +199,8 @@ nav ul li a {
 }
 
 .words-container .fullscreen:hover {
-  -webkit-animation: scaleback 0.5s;
-          animation: scaleback 0.5s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 @media (max-width: 600px) {
