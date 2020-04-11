@@ -350,6 +350,11 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
+.controls button img {
+  width: 13px;
+  height: 12px;
+}
+
 .controls button:first-child {
   margin-right: -5px;
   border-radius: unset;
