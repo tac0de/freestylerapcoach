@@ -166,6 +166,10 @@ nav ul li a {
 }
 
 .words-container .dark-mode {
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
   background-image: url(../images/moon.svg);
   width: 30px;
   height: 30px;
@@ -178,6 +182,11 @@ nav ul li a {
   transition: 0.3s;
 }
 
+.words-container .dark-mode:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .words-container .dark-mode.black {
   background-image: url(../images/sun.svg);
   background-size: cover;
@@ -186,8 +195,10 @@ nav ul li a {
 }
 
 .words-container .fullscreen {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
   background-image: url(../images/fullscreen.svg);
   width: 36px;
   height: 36px;
