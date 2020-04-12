@@ -363,10 +363,6 @@ footer {
     }
   }
 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
   span {
     padding-left: 15px;
   }
@@ -402,14 +398,15 @@ footer {
 }
 
 .wrapper {
-  height: 100px;
-  margin-top: -18px;
-  position: relative;
+  margin-top: -16px;
 }
 
 // ABOUT PAGE
 section.about-section,
-section.contact-section {
+section.contact-section,
+section.sitemap-section,
+section.faq-section {
+  height: 55vh;
   .content {
     max-width: 968px;
     margin: 0 auto;
@@ -424,6 +421,10 @@ section.contact-section {
       @media (min-width: 768px) {
         font-size: 1.6rem;
       }
+    }
+
+    h3 {
+      margin-top: 3rem;
     }
 
     p {
@@ -443,6 +444,16 @@ section.contact-section {
       font-weight: 300;
       letter-spacing: 0.02rem;
       margin: 25px 0 -20px;
+    }
+  }
+}
+
+section.sitemap-section {
+  .content {
+    margin-top: 1rem;
+
+    p {
+      margin: 0;
     }
   }
 }
