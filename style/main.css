@@ -133,8 +133,6 @@ nav ul > li {
 }
 
 nav ul li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   list-style: none;
 }
 
@@ -143,8 +141,6 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
   display: block;
   padding: 20px;
   color: #222;

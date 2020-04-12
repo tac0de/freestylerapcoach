@@ -114,14 +114,14 @@ nav {
     margin: 0 auto;
 
     li {
-      transition: 0.3s;
+      // transition: 0.3s;
       list-style: none;
 
       &:last-child {
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       }
       a {
-        transition: 0.2s ease-out;
+        // transition: 0.2s ease-out;
         &:hover {
           @media (min-width: 768px) {
             background: unset;
