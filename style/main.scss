@@ -236,6 +236,10 @@ nav {
   h1 {
     font-size: 3.6rem;
 
+    &.text-big {
+      font-size: 10rem;
+    }
+
     @media (min-width: 768px) {
       font-size: 4.8rem;
     }

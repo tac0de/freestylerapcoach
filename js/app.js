@@ -30,13 +30,22 @@ let count = 2;
 
   fullscreen.addEventListener("click", toggleFullScreen, false);
 
+  document.addEventListener("fullscreenchange", () => {
+    if (!document.fullscreen) {
+      h1.classList.remove("text-big");
+    }
+  });
+
   function toggleFullScreen() {
     fullscreen.classList.toggle("exit");
+
     if (!document.fullscreenElement) {
       wordsContainer.requestFullscreen();
+      h1.classList.add("text-big");
     } else {
       if (document.exitFullscreen) {
         document.exitFullscreen();
+        h1.classList.remove("text-big");
       }
     }
   }

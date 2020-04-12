@@ -282,6 +282,10 @@ nav ul li a:hover {
   font-size: 3.6rem;
 }
 
+.words-container h1.text-big {
+  font-size: 10rem;
+}
+
 @media (min-width: 768px) {
   .words-container h1 {
     font-size: 4.8rem;
