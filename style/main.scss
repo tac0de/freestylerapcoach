@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -378,14 +383,26 @@ footer {
   ul {
     list-style: none;
     display: flex;
-    padding-left: 15px;
-    margin-bottom: 1rem;
+    justify-content: center;
+    padding-left: 10px;
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+    }
+
+    display: inline-block;
 
     li {
       margin-bottom: 4px;
       color: #222;
       display: inline-block;
+
       &:not(:last-child)::after {
+        content: "·";
+        margin: 0 8px;
+      }
+
+      &:first-child::before {
         content: "·";
         margin: 0 8px;
       }
@@ -406,8 +423,16 @@ footer {
 section.about-section,
 section.contact-section,
 section.sitemap-section,
-section.faq-section {
-  height: 55vh;
+section.faq-section,
+section.blog-section {
+  min-height: 100%;
+  margin-bottom: -100px;
+
+  &::after {
+    height: 100px;
+    content: "";
+    display: block;
+  }
   .content {
     max-width: 968px;
     margin: 0 auto;

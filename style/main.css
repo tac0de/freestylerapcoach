@@ -10,6 +10,11 @@
           box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -441,8 +446,17 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15px;
-  margin-bottom: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  footer ul {
+    padding-left: 0;
+  }
 }
 
 footer ul li {
@@ -452,6 +466,11 @@ footer ul li {
 }
 
 footer ul li:not(:last-child)::after {
+  content: "·";
+  margin: 0 8px;
+}
+
+footer ul li:first-child::before {
   content: "·";
   margin: 0 8px;
 }
@@ -468,14 +487,27 @@ footer ul li a {
 section.about-section,
 section.contact-section,
 section.sitemap-section,
-section.faq-section {
-  height: 55vh;
+section.faq-section,
+section.blog-section {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+section.about-section::after,
+section.contact-section::after,
+section.sitemap-section::after,
+section.faq-section::after,
+section.blog-section::after {
+  height: 100px;
+  content: "";
+  display: block;
 }
 
 section.about-section .content,
 section.contact-section .content,
 section.sitemap-section .content,
-section.faq-section .content {
+section.faq-section .content,
+section.blog-section .content {
   max-width: 968px;
   margin: 0 auto;
   padding-left: 20px;
@@ -486,7 +518,8 @@ section.faq-section .content {
 section.about-section .content h2,
 section.contact-section .content h2,
 section.sitemap-section .content h2,
-section.faq-section .content h2 {
+section.faq-section .content h2,
+section.blog-section .content h2 {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
@@ -495,7 +528,8 @@ section.faq-section .content h2 {
   section.about-section .content h2,
   section.contact-section .content h2,
   section.sitemap-section .content h2,
-  section.faq-section .content h2 {
+  section.faq-section .content h2,
+  section.blog-section .content h2 {
     font-size: 1.6rem;
   }
 }
@@ -503,14 +537,16 @@ section.faq-section .content h2 {
 section.about-section .content h3,
 section.contact-section .content h3,
 section.sitemap-section .content h3,
-section.faq-section .content h3 {
+section.faq-section .content h3,
+section.blog-section .content h3 {
   margin-top: 3rem;
 }
 
 section.about-section .content p,
 section.contact-section .content p,
 section.sitemap-section .content p,
-section.faq-section .content p {
+section.faq-section .content p,
+section.blog-section .content p {
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 0.02rem;
