@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162751750-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-162751750-2");
+    </script>
+    <meta
+      name="description"
+      content="Practice and improve your freestyle rap
+    game with Freestyle Rap Coach's freestyle word generator!"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Rap Word Generator</title>
+  </head>
 
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162751750-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-162751750-2');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/favicon.png" />
-  <link rel="stylesheet" href="style/main.css">
-  <title>Rap Word Generator</title>
-</head>
+  <body>
+    <nav>
+      <div class="toggle">
+        <div class="menu"></div>
+        <div class="logo">Freestyle Rap Coach</div>
+      </div>
 
-<body>
-  <nav>
-    <div class="toggle">
-      <div class="menu"></div>
-      <div class="logo">Freestyle
-        Rap Coach</div>
+      <ul>
+        <li class="logo"><a href="/">Freestyle Rap Coach</a></li>
+        <div>
+          <li><a href="/">Freestyle</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="padding-container">
+      <div class="words-container">
+        <h1></h1>
+        <div class="dark-mode"></div>
+        <div class="fullscreen"></div>
+      </div>
     </div>
 
-    <ul>
-      <li class="logo"><a href="/">Freestyle Rap Coach</a></li>
-      <div>
-        <li><a href="/">Freestyle</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </div>
-    </ul>
-  </nav>
-
-  <div class="padding-container">
-    <div class="words-container">
-      <h1></h1>
-      <div class="dark-mode"></div>
-      <div class="fullscreen"></div>
-    </div>
-  </div>
-
-
-  <div class="controls">
-    <div class="controls__wrapper">
-      <div>
-        <p>Languages</p>
-        <select>
-          <option class="en" selected>English</option>
-          <option class="es">Español</option>
-          <option class="fr">Français</option>
-          <option class="it">Italiano</option>
-          <option class="cs">Čeština</option>
-          <option class="ko">한국어</option>
-          <option class="ja">日本人
-          </option>
-          <option class="zh-hans">汉语
-          </option>
-          <option class="zh-hant">漢語</option>
-        </select>
-      </div>
-      <div>
-        <p class="picker-label">Speed (sec)</p>
-        <div class="number-picker">
-          <button class="minus">
-            <img src="./images/minus.svg" alt="">
-          </button>
-          <input type="number" value="2" min="0" max="12" readonly />
-          <button class="plus">
-            <img src="./images/plus.svg" alt="">
-          </button>
+    <div class="controls">
+      <div class="controls__wrapper">
+        <div>
+          <p>Languages</p>
+          <select>
+            <option class="en" selected>English</option>
+            <option class="es">Español</option>
+            <option class="fr">Français</option>
+            <option class="it">Italiano</option>
+            <option class="cs">Čeština</option>
+            <option class="ko">한국어</option>
+            <option class="ja">日本人 </option>
+            <option class="zh-hans">汉语 </option>
+            <option class="zh-hant">漢語</option>
+          </select>
+        </div>
+        <div>
+          <p class="picker-label">Speed (sec)</p>
+          <div class="number-picker">
+            <button class="minus">
+              <img src="./images/minus.svg" alt="" />
+            </button>
+            <input type="number" value="2" min="0" max="12" readonly />
+            <button class="plus">
+              <img src="./images/plus.svg" alt="" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <div class="sc-container">
+      <iframe
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1029720298&color=%23ff5500&amp;auto_play=false&amp;show_artwork=false&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=true"
+      >
+      </iframe>
+    </div>
 
-  <div class="sc-container">
-    <iframe scrolling="no" frameborder="no" allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1029720298&color=%23ff5500&amp;auto_play=false&amp;show_artwork=false&amp;show_comments=false&amp;show_playcount=false&amp;show_user=false&amp;hide_related=true">
-    </iframe>
-  </div>
-
-  <div class="wrapper">
-    <footer>
-      <div class="top-border"></div>
-      <div>
-        <span>© 2020 Wasabi Taco. All rights reserved</span>
-        <ul>
-          <li><a target="_blank" href="policy.html">Policy</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <script src="js/menu.js"></script>
-  <script type="module" src="js/app.js"></script>
-</body>
-
+    <div class="wrapper">
+      <footer>
+        <div class="top-border"></div>
+        <div>
+          <span>© 2020 Wasabi Taco. All rights reserved</span>
+          <ul>
+            <li><a target="_blank" href="policy.html">Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="js/menu.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
 </html>
